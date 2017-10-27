@@ -1,12 +1,75 @@
 <html>
+
 <head>
 	<title>Slap Object Game</title>
-	<link rel="stylesheet" href="">
-	<link rel="stylesheet" href="">
-	
+	<link rel="stylesheet" href="game.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+
 </head>
+
 <body>
-	
-	<script src=""></script>
+	<header>
+		<div class="status-bar">
+			<button onclick="reset()">Reset</button>
+		</div>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div id="player" class="col-sm-6 col-md-4">
+				<span>Name:
+					<span id="playerName">--</span>
+				</span>
+				<span>Health:
+					<span id="playerHealth">Over 9000!</span>
+				</span>
+				<span> Hits Taken:
+					<span id="playerHits">--</span>
+				</span>
+				<img src="https://vignette.wikia.nocookie.net/vsbattles/images/5/56/Goku_%28Base%29.png/revision/latest?cb=20160315175220"
+				 alt="">
+				<span>Attacks:
+					<span id="attacks">
+						<button onclick="flick()">Flick</button>
+						<button onclick="punch()">Punch</button>
+						<button onclick="kick()">Kick</button>
+						<button onclick="spinKick()">Spin Kick</button>
+						<button onclick="kamehameha()">
+							<span>
+								<img src="http://data.apksum.com/a9/kamehapowerpow.mehakam.saiyanpowerballenergy/2.1/icon.png">
+							</span>
+					</span>
+				</span>
+			</div>
+			<div>
+				<span>Items:  
+					<span id="playerItems"></span>
+				</span>
+			</div>
+		</div>
+		<div id="enemy" class="col-sm-6 col-md-offset-4 col-md-4">
+			<div class="target">
+				<span>Name:
+					<span id="enemyName">--</span>
+				</span>
+				<span>Health:
+					<span id="enemyHealth">Over 9000!</span>
+				</span>
+				<span> Hits Taken:
+					<span id="enemyHits">--</span>
+				</span>
+				<span> Items:
+					<span id="enemyItems"></span>
+				</span>
+			</div>
+			<img src="https://vignette.wikia.nocookie.net/villains/images/e/e3/Scouter_vegeta.png/revision/latest?cb=20130802141754"
+			 alt="">
+		</div>
+		<div class="footer">
+
+		</div>
+	</div>
+	<script src="game.js"></script>
 </body>
+
 </html>
